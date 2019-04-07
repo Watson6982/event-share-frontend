@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = 'api/'
+const url = 'https://event-share-backend.herokuapp.com/api/'
 
 class EventService {
   // Get Events
