@@ -3,14 +3,31 @@
     <img src="./assets/logo.png">
     <div>
       <router-link :to="{ name: 'Events'}">Events</router-link>
+      <router-link :to="{ name: 'Login'}">Login</router-link>
+      <a href="#" v-on:click="logout">Logout</a>
     </div>
     <router-view/>
   </div>
 </template>
 
 <script>
+import UserService from './UserService'
+// import router from './router'
+// import axios from 'axios'
 export default {
-  name: 'App'
+  name: 'App',
+  methods: {
+    // logout: function (e) {
+    //   axios.get('https://event-share-backend.herokuapp.com/api/logout')
+    //     .then(() => {
+    //       router.push('/')
+    //     })
+    // }
+
+    logout: function () {
+      UserService.logoutUser()
+    }
+  }
 }
 </script>
 
