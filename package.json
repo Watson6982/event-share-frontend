@@ -14,7 +14,7 @@
   "serve": "vue-cli-service serve",
   "build": "vue-cli-service build",
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "server-static": "^2.0.5",
     "vue": "^2.5.2",
